@@ -1,0 +1,14 @@
+.footer {
+    background-color: red;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer h6 {
+    color: red;
+    margin: 0;
+}
+
+.footer h4 {
+    margin: auto;
+}
