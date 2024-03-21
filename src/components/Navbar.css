@@ -1,5 +1,10 @@
+.navbar {
+    height: 56px;
+}
+
 .navbar h1 {
-    color: red;
+    color: yellow;
+    margin: auto;
 }
 
 .navbar button {

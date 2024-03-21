@@ -1,11 +1,11 @@
 .footer {
-    background-color: red;
+    background-color: darkgray;
     padding-top: 1rem;
     padding-bottom: 1.5rem;
 }
 
 .footer h6 {
-    color: red;
+    color: #282c34;
     margin: 0;
 }
 

@@ -1,0 +1,14 @@
+.catalog {
+    background-color: whitesmoke;
+}
+
+.catalog h1 {
+    color: palevioletred;
+    margin: 0;
+}
+
+.catalog .test{
+    background-color: darkmagenta;
+    height: 1200px;
+    display: block;
+}
