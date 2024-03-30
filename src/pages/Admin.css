@@ -1,0 +1,15 @@
+.admin h1 {
+    color: darkcyan;
+}
+
+.admin .parent {
+    display:flex;
+}
+
+.admin .prods{
+    flex: 2;
+}
+
+.admin .coupons {
+    flex: 1;
+}
