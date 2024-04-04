@@ -8,9 +8,12 @@ import ShoppingList from './pages/ShoppingList';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Admin from './pages/Admin';
+import GlobalProvider from './context/GlobalProvider';
+import Cart from './pages/Cart';
 
 function App() {
   return (
+    <GlobalProvider>
     <BrowserRouter>
     <div className="App">
       <Navbar />
@@ -22,12 +25,14 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/shoppingList' element={<ShoppingList />} />
           <Route path='/admin' element={<Admin />} />
+            <Route path='/cart' element={<Cart />} />
         </Routes>
 
       <Footer />
 
     </div>
     </BrowserRouter>
+    </GlobalProvider>
   );
 }
 

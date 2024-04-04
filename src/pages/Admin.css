@@ -13,3 +13,32 @@
 .admin .coupons {
     flex: 1;
 }
+
+.admin .form {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: left;
+}
+
+.admin .form div {
+    margin-bottom: 10px;
+}
+
+.admin  ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.admin li{
+    display: block;
+    border: 1px solid #dcdce2;
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}

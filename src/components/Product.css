@@ -26,3 +26,8 @@
     display: flex;
     justify-content: center;
 }
+
+.product .price {
+    font-size: 18px;
+    margin: 0 10px;
+}
