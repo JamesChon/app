@@ -76,7 +76,7 @@ function Navbar() {
                             </li>
                         </ul>
                         <Link className="btn btn-outline-success" to='/cart'>
-                            {getNumProducts()} Cart
+                            Cart ({getNumProducts()}) 
                         </Link>
                     </div>
                 </div>

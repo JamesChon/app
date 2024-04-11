@@ -7,6 +7,8 @@ function Home() {
             <h1>Welcome to Fruit Basket</h1>
 
             <Link className="btn btn-primary" to="/catalog">Check our amazing catalog!</Link>
+
+            <img src="/images/background6.jpg" alt="" />
         </div>
     );
 }

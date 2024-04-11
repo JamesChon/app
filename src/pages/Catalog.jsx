@@ -1,38 +1,23 @@
+import { useEffect, useState } from "react";
 import Product from "../components/Product";
 import "./Catalog.css";
+import DataService from "../services/dataServices";
+
 
 function Catalog() {
+    const [data, setData] = useState([]);
 
-    const data = [
-        {
-            title: "Mango",
-            price: 2.59,
-            category: "Fruit",
-            image: "mango.jpg",
-            _id: "1"
-        },
-        {
-            title: "Papaya",
-            price: 9.59,
-            category: "Fruit",
-            image: "papaya.jpg",
-            _id: "2"
-        },
-        {
-            title: "Dragon Fruit",
-            price: 14.95,
-            category: "Fruit",
-            image: "dragonfruit.jpg",
-            _id: "3"
-        },
-        {
-            title: "Guava",
-            price: 13.89,
-            category: "Fruit",
-            image: "guava.jpg",
-            _id: "4"
-        },
-    ];
+    async function loadCatalog() {
+        let service = new DataService();
+        let cat = await service.getCatalog();
+        setData(cat);
+    }
+
+    useEffect(function () {
+        loadCatalog();
+    }, []);
+
+
 
     return (
         <div className="catalog page">
